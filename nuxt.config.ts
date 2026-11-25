@@ -74,7 +74,7 @@ export default defineNuxtConfig({
         },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:wght@400;500;600;700&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap",
         },
         { rel: "icon", href: "/favicon.png", type: "image/png" },
         { rel: "apple-touch-icon", href: "/favicon.png" },

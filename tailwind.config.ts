@@ -17,7 +17,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"IBM Plex Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ['"Newsreader"', "Georgia", "serif"],
+        display: ['"Sora"', "sans-serif"],
       },
       borderRadius: {
         sm: "calc(var(--radius) - 3px)",

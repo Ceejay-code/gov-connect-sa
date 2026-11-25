@@ -5,7 +5,7 @@
 :root {
   --radius: 0.5rem;
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Newsreader", Georgia, serif;
+  --font-display: "Sora", sans-serif;
   --civic-navy: oklch(0.3219 0.1197 261.44);
   --civic-green: oklch(0.6408 0.1726 150.05);
   --civic-green-deep: oklch(0.5144 0.1333 151.83);

@@ -119,10 +119,10 @@ useScrollReveal(pageRoot);
           South African public-service research
         </p> -->
         <h1
-          class="content-reveal mt-3 max-w-4xl font-display text-4xl font-medium leading-[1.08] tracking-tight text-primary sm:text-5xl lg:text-6xl"
+          class="content-reveal mt-3 max-w-4xl font-display text-4xl font-semibold leading-[1.08] tracking-tight text-primary sm:text-5xl lg:text-6xl"
         >
           Government Services,
-          <span class="block font-bold text-civic-green-deep">Made More Accessible.</span>
+          <span class="block font-semibold text-civic-green-deep">Made More Accessible.</span>
         </h1>
         <div
           class="content-reveal-delay-1 mt-7 grid gap-6 border-t border-border pt-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-center"
@@ -167,7 +167,7 @@ useScrollReveal(pageRoot);
       >
         <div class="lg:sticky lg:top-32 lg:self-start">
           <h2
-            class="max-w-md font-display text-3xl font-semibold leading-tight text-primary sm:text-4xl"
+            class="max-w-md font-display text-3xl font-semibold leading-tight tracking-tight text-primary sm:text-4xl"
           >
             Tell us what slows you down.
           </h2>
@@ -194,7 +194,7 @@ useScrollReveal(pageRoot);
         <div class="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <h2
-              class="max-w-lg font-display text-3xl font-semibold leading-tight text-primary sm:text-4xl"
+              class="max-w-lg font-display text-3xl font-semibold leading-tight tracking-tight text-primary sm:text-4xl"
             >
               Why public services feel harder than they should
             </h2>
@@ -229,7 +229,7 @@ useScrollReveal(pageRoot);
       >
         <div>
           <h2
-            class="max-w-lg font-display text-3xl font-semibold leading-tight text-primary sm:text-4xl"
+            class="max-w-lg font-display text-3xl font-semibold leading-tight tracking-tight text-primary sm:text-4xl"
           >
             What a connected portal could cover
           </h2>
@@ -257,7 +257,9 @@ useScrollReveal(pageRoot);
     <section id="how-it-works" class="scroll-mt-24">
       <div data-reveal class="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
         <div class="max-w-2xl">
-          <h2 class="font-display text-3xl font-semibold leading-tight text-primary sm:text-4xl">
+          <h2
+            class="font-display text-3xl font-semibold leading-tight tracking-tight text-primary sm:text-4xl"
+          >
             How it could work
           </h2>
           <p class="mt-4 text-base leading-7 text-muted-foreground">
@@ -289,7 +291,7 @@ useScrollReveal(pageRoot);
         class="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-14 sm:px-8 sm:py-16 md:flex-row md:items-center md:justify-between"
       >
         <div class="max-w-2xl">
-          <h2 class="font-display text-3xl font-semibold leading-tight sm:text-4xl">
+          <h2 class="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
             Have a recent experience to add?
           </h2>
           <p class="mt-3 max-w-xl text-base leading-7 text-primary-foreground/80">
