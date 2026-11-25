@@ -83,28 +83,6 @@ async function handleSubmit() {
     novalidate
     @submit.prevent="handleSubmit"
   >
-    <Transition name="fade-slide">
-      <div
-        v-if="notice"
-        :class="[
-          'mb-6 flex items-start gap-3 rounded-md border p-4',
-          notice.type === 'success'
-            ? 'border-civic-green/30 bg-civic-soft text-foreground'
-            : 'border-destructive/30 bg-destructive/5 text-foreground',
-        ]"
-        :role="notice.type === 'success' ? 'status' : 'alert'"
-        aria-live="polite"
-      >
-        <CheckCircle2
-          v-if="notice.type === 'success'"
-          class="mt-0.5 size-4 shrink-0 text-civic-green-deep"
-          aria-hidden="true"
-        />
-        <AlertCircle v-else class="mt-0.5 size-4 shrink-0 text-destructive" aria-hidden="true" />
-        <p class="text-sm leading-6">{{ notice.text }}</p>
-      </div>
-    </Transition>
-
     <p v-if="hasErrors" class="sr-only" role="alert">
       Please review the highlighted fields before submitting.
     </p>
@@ -285,20 +263,48 @@ async function handleSubmit() {
     </div>
 
     <div
-      class="mt-7 flex flex-col gap-4 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between"
+      class="mt-7 flex flex-col gap-4 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
     >
-      <p class="flex max-w-md items-start gap-2 text-xs leading-5 text-muted-foreground">
+      <p class="flex min-w-0 flex-1 items-start gap-2.5 text-xs leading-5 text-muted-foreground">
         <Lock class="mt-0.5 size-3.5 shrink-0 text-civic-green-deep" aria-hidden="true" />
         <span>
           Your name and email are optional. Please do not include ID numbers, passwords, or other
           sensitive details.
         </span>
       </p>
-      <Button type="submit" variant="civic" size="lg" :disabled="isSubmitting" class="shrink-0">
+      <Button
+        type="submit"
+        variant="civic"
+        size="lg"
+        :disabled="isSubmitting"
+        class="h-11 w-full shrink-0 px-6 sm:w-auto"
+      >
         <Loader2 v-if="isSubmitting" class="animate-spin" aria-hidden="true" />
         <Send v-else aria-hidden="true" />
-        <span>{{ isSubmitting ? "Sending…" : "Submit feedback" }}</span>
+        <span>{{ isSubmitting ? "Sending…" : "Submit Feedback" }}</span>
       </Button>
     </div>
+
+    <Transition name="fade-slide">
+      <div
+        v-if="notice"
+        :class="[
+          'mt-6 flex items-start gap-3 rounded-md border p-4',
+          notice.type === 'success'
+            ? 'border-civic-green/30 bg-civic-soft text-foreground'
+            : 'border-destructive/30 bg-destructive/5 text-foreground',
+        ]"
+        :role="notice.type === 'success' ? 'status' : 'alert'"
+        aria-live="polite"
+      >
+        <CheckCircle2
+          v-if="notice.type === 'success'"
+          class="mt-0.5 size-4 shrink-0 text-civic-green-deep"
+          aria-hidden="true"
+        />
+        <AlertCircle v-else class="mt-0.5 size-4 shrink-0 text-destructive" aria-hidden="true" />
+        <p class="text-sm leading-6">{{ notice.text }}</p>
+      </div>
+    </Transition>
   </form>
 </template>

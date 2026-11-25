@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 import { ArrowRight, ChevronRight, Menu, X } from "lucide-vue-next";
-import govConnectLogo from "~/assets/images/govconnect-sa-logo.png";
+import civiLinkLogo from "~/assets/images/CiviLinkSA-Logo.png";
 
 const menuOpen = ref<boolean>(false);
 
@@ -59,7 +59,7 @@ onBeforeUnmount(() => {
       <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
         <a href="#home" aria-label="GovConnect SA home" @click="closeMenu">
           <img
-            :src="govConnectLogo"
+            :src="civiLinkLogo"
             alt="GovConnect SA"
             width="849"
             height="294"
@@ -121,7 +121,7 @@ onBeforeUnmount(() => {
           <div class="flex items-center justify-between border-b border-border px-5 py-4">
             <a href="#home" aria-label="GovConnect SA home" @click="closeMenu">
               <img
-                :src="govConnectLogo"
+                :src="civiLinkLogo"
                 alt="GovConnect SA"
                 width="849"
                 height="294"
@@ -188,7 +188,7 @@ onBeforeUnmount(() => {
         >
           <div class="max-w-sm">
             <img
-              :src="govConnectLogo"
+              :src="civiLinkLogo"
               alt="GovConnect SA"
               width="849"
               height="294"

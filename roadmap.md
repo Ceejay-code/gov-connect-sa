@@ -1,4 +1,4 @@
-# GovConnect SA
+# CiviLink SA
 
 - [ ] Build the white, responsive public feedback site using the uploaded logo and the supplied content/disclaimer.
 - [ ] Refine the navbar to keep one feedback button and restyle the font, icons, and hero layout from the user's feedback.

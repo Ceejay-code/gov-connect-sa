@@ -10,7 +10,7 @@ import {
   Search,
   ShieldCheck,
 } from "lucide-vue-next";
-import govConnectLogo from "~/assets/images/govconnect-sa-logo.png";
+import civiLinkLogo from "~/assets/images/CiviLinkSA-Logo.png";
 import type { AdminFeedbackResponse, FeedbackSubmissionItem } from "~/utils/admin-types";
 import { buildCsvDocument } from "~/utils/csv";
 import { feedbackDepartments } from "~/utils/feedback-schema";
@@ -214,7 +214,7 @@ function exportCsv() {
       <div class="w-full max-w-md rounded-lg border border-border bg-card p-6 shadow-sm sm:p-8">
         <div class="flex items-center justify-between gap-4">
           <img
-            :src="govConnectLogo"
+            :src="civiLinkLogo"
             alt="GovConnect SA"
             class="h-10 w-36 object-contain object-left"
           />
@@ -280,7 +280,7 @@ function exportCsv() {
           <div class="flex items-center gap-4">
             <NuxtLink to="/" aria-label="GovConnect SA home">
               <img
-                :src="govConnectLogo"
+                :src="civiLinkLogo"
                 alt="GovConnect SA"
                 class="h-10 w-36 object-contain object-left"
               />

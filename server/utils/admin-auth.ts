@@ -1,7 +1,8 @@
 import crypto from "node:crypto";
 import type { H3Event } from "h3";
 
-export const ADMIN_SESSION_COOKIE = "govconnect_admin_session";
+// export const ADMIN_SESSION_COOKIE = "govconnect_admin_session";
+export const ADMIN_SESSION_COOKIE = "civilink_admin_session";
 export const ADMIN_SESSION_TTL_SECONDS = 60 * 60 * 8; // 8 hours
 
 const MAX_FAILED_ATTEMPTS = 5;
