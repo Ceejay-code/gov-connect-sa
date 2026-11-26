@@ -19,7 +19,7 @@ import heroImage from "~/assets/images/govconnect-sa-hero.jpg";
 const runtimeConfig = useRuntimeConfig();
 const siteUrl = (runtimeConfig.public.siteUrl || "http://localhost:3000").replace(/\/+$/, "");
 const ogImageUrl = `${siteUrl}/og-image.jpg`;
-const pageTitle = "GovConnect SA | Share Your Public-Service Experience";
+const pageTitle = "CiviLink SA | Share Your Public-Service Experience";
 const pageDescription =
   "An independent South African research project exploring easier online access to public services. Share your experience and help identify what matters most.";
 
@@ -27,12 +27,12 @@ useSeoMeta({
   title: pageTitle,
   description: pageDescription,
   keywords:
-    "GovConnect SA, South Africa public services, government services online, Home Affairs feedback, SASSA feedback, municipal services survey",
+    "CiviLink SA, South Africa public services, government services online, Home Affairs feedback, SASSA feedback, municipal services survey",
   ogTitle: pageTitle,
   ogDescription: pageDescription,
   ogType: "website",
   ogUrl: `${siteUrl}/`,
-  ogSiteName: "GovConnect SA",
+  ogSiteName: "CiviLink SA",
   ogLocale: "en_ZA",
   ogImage: ogImageUrl,
   ogImageWidth: 1200,
@@ -52,13 +52,13 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        name: "GovConnect SA",
+        name: "CiviLink SA",
         url: `${siteUrl}/`,
         description: pageDescription,
         inLanguage: "en-ZA",
         publisher: {
           "@type": "Organization",
-          name: "GovConnect SA",
+          name: "CiviLink SA",
           url: `${siteUrl}/`,
           logo: {
             "@type": "ImageObject",
@@ -128,10 +128,6 @@ useScrollReveal(pageRoot);
           class="content-reveal-delay-1 mt-7 grid gap-6 border-t border-border pt-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-center"
         >
           <p class="max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
-            <!-- Accessing public services shouldn't mean taking a full day off work to travel and wait
-            in queues. GovConnect SA is collecting feedback to learn which services South Africans
-            struggle with most and which ones belong online first. -->
-
             Imagine accessing government services from one place, without unnecessary travelling,
             long queues or repeated visits. CiviLink SA envisions a connected digital platform that
             makes public services easier to discover, access and track.

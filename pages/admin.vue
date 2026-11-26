@@ -20,7 +20,7 @@ definePageMeta({
 });
 
 useHead({
-  title: "Survey Insights | GovConnect SA",
+  title: "Survey Insights | CiviLink SA",
   meta: [{ name: "robots", content: "noindex, nofollow" }],
 });
 
@@ -202,7 +202,7 @@ function exportCsv() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `govconnect-sa-feedback-${new Date().toISOString().slice(0, 10)}.csv`;
+  link.download = `civilink-sa-feedback-${new Date().toISOString().slice(0, 10)}.csv`;
   link.click();
   URL.revokeObjectURL(url);
 }
@@ -215,7 +215,7 @@ function exportCsv() {
         <div class="flex items-center justify-between gap-4">
           <img
             :src="civiLinkLogo"
-            alt="GovConnect SA"
+            alt="CiviLink SA"
             class="h-10 w-36 object-contain object-left"
           />
           <span
@@ -278,10 +278,10 @@ function exportCsv() {
           class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8"
         >
           <div class="flex items-center gap-4">
-            <NuxtLink to="/" aria-label="GovConnect SA home">
+            <NuxtLink to="/" aria-label="CiviLink SA home">
               <img
                 :src="civiLinkLogo"
-                alt="GovConnect SA"
+                alt="CiviLink SA"
                 class="h-10 w-36 object-contain object-left"
               />
             </NuxtLink>

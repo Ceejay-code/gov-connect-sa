@@ -43,24 +43,12 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="min-h-screen bg-background text-foreground">
-    <!-- <div class="border-b border-primary/10 bg-primary text-primary-foreground">
-      <div
-        class="mx-auto flex max-w-7xl items-center justify-center gap-2 px-5 py-2 text-center text-xs leading-5 sm:px-8"
-      >
-        <Info class="size-3.5 shrink-0 text-civic-gold" aria-hidden="true" />
-        <span>
-          Concept preview: GovConnect SA is an independent research project, not an official
-          government website.
-        </span>
-      </div>
-    </div> -->
-
     <header class="sticky top-0 z-40 border-b border-border/80 bg-background/95 backdrop-blur">
       <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
-        <a href="#home" aria-label="GovConnect SA home" @click="closeMenu">
+        <a href="#home" aria-label="CiviLink SA home" @click="closeMenu">
           <img
             :src="civiLinkLogo"
-            alt="GovConnect SA"
+            alt="CiviLink SA"
             width="849"
             height="294"
             decoding="async"
@@ -119,10 +107,10 @@ onBeforeUnmount(() => {
           class="fixed inset-y-0 right-0 z-50 flex w-[min(86vw,21rem)] flex-col border-l border-border bg-background shadow-2xl md:hidden"
         >
           <div class="flex items-center justify-between border-b border-border px-5 py-4">
-            <a href="#home" aria-label="GovConnect SA home" @click="closeMenu">
+            <a href="#home" aria-label="CiviLink SA home" @click="closeMenu">
               <img
                 :src="civiLinkLogo"
-                alt="GovConnect SA"
+                alt="CiviLink SA"
                 width="849"
                 height="294"
                 class="h-10 w-36 object-contain object-left"
@@ -226,10 +214,10 @@ onBeforeUnmount(() => {
           class="flex flex-col gap-3 pt-6 text-xs leading-5 text-muted-foreground sm:flex-row sm:items-start sm:justify-between"
         >
           <p class="max-w-3xl">
-            GovConnect SA is an independent concept initiative and is not affiliated with or
+            CiviLink SA is an independent concept initiative and is not affiliated with or
             officially endorsed by the South African government.
           </p>
-          <p class="shrink-0">© {{ currentYear }} GovConnect SA</p>
+          <p class="shrink-0">© {{ currentYear }} CiviLink SA</p>
         </div>
       </div>
     </footer>
